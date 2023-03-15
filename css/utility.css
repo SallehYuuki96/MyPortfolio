@@ -1,5 +1,10 @@
 
 
+.bg-primary{
+    background-color: #d8060d;
+    color: #fcffe7;
+}
+
 .bg-dark{
     background-color: #2B3467;
     color: #fcffe7;
