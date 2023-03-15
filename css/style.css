@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* HERO SECTION */
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding: 0 45px;
+  background-color: #eb455f;
+  color: #fff;
+}
+
+.navbar a {
+  padding: 5px 15px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: #fff 1px solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+/* Header */
+.hero {
+  height: 100vh;
+  background-color: #fcffe7;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  height: 100%;
+}
+
+.hero .content h1 {
+  font-size: 70px;
+}
+
+/* Header Content = Animation Txts */
+.hero .content .wrapper {
+  display: flex;
+}
+
+.hero .content .wrapper .static-txt {
+  color: #333;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.hero .content .wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  /* background-color: red; */
+  overflow: hidden;
+}
+
+.hero .content .wrapper .dynamic-txts li {
+  color: #d8060d;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: left;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4, end) infinite;
+  
+}
+
+@keyframes slide{
+    0%{
+        top: 0;
+    }
+    34%{
+        top: 0;
+    }
+    35%{
+        top: -90px;
+    }
+    67%{
+        top: -90px;
+    }
+    68%{
+        top: -180px;
+    }
+    82%{
+        top: -180px;
+    }
+    83%{
+        top: -270px;
+    }
+    100%{
+        top: -270px;
+    }
+}
+
+/* Text Animations */
+.hero .content .wrapper .dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+
+.hero .content .wrapper .dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #fcffe7;
+  border-left: 2px solid #d8060d;
+  animation: typing 4s steps(19) infinite;
+}
+
+/* @keyframes slide {
+    0%{
+        top: 0px;
+    }
+    15%{
+        top: 64px;
+    }
+  100% {
+    top: -360px;
+  }
+} */
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 20px);
+  }
+
+  100% {
+    left: 0;
+    /* left: 100%;
+    margin: 0 -35px 0 35px;
+    background: #fcffe7; */
+  }
+}
+
+/*  
+EB455F - Red
+FCFFE7 - Light Yellow
+BAD7E9 - Light Blue
+2B3467 - Dark Blue
+
+*/
