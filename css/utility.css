@@ -26,7 +26,7 @@
     height: 100%;
 }
 
-.flex-column .flex-row{
+.flex-items.flex-column .flex-row{
     flex-direction: row;
     display: flex;
     flex-direction: row;

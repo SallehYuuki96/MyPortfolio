@@ -162,17 +162,6 @@ img {
   animation: typing 4s steps(19) infinite;
 }
 
-/* @keyframes slide {
-    0%{
-        top: 0px;
-    }
-    15%{
-        top: 64px;
-    }
-  100% {
-    top: -360px;
-  }
-} */
 
 @keyframes typing {
   40%,
@@ -191,6 +180,8 @@ img {
 /* main section */
 .about{
   padding: 20px;
+  height: 100%;
+  max-height: 700px;
 }
 
 
@@ -242,11 +233,6 @@ img {
 
 }
 
-
-.Portfolio iframe{
-  width: 100%;
-  display: block;
-}
 
 /* contact */
 
